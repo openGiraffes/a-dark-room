@@ -13,7 +13,7 @@ var Header = {
 	options: {}, // Nothing for now
 	
 	canTravel: function() {
-		return $('#menu-list li').length > 1;
+		return $('#menucontainer li').length > 1;
 	},
 	
 	addLocation: function(text, id, module) {
@@ -23,6 +23,6 @@ var Header = {
 				if(Header.canTravel()) {
 					Engine.travelTo(module);
 				}
-			}).appendTo($('#menu-list'));
+			}).appendTo($('#menucontainer'));
 	}
 };
