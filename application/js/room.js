@@ -603,7 +603,7 @@ var Room = {
 		if(Engine.activeModule == this) {
 			document.title = title;
 		}
-		$('div#location_room').text(title);
+		$('#location_room').text(title);
 	},
 	
 	updateButton: function() {
